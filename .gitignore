@@ -1,0 +1,31 @@
+# Unreal
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Build/
+*.VC.db
+*.opensdf
+*.sdf
+*.sln.docstates
+*.suo
+*.xcodeproj
+*.xcworkspace
+.idea/
+.vs/
+*.user
+*.userprefs
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Node tools
+node_modules/
+
+# Secrets
+.env
+.env.*
+*.pem
+secrets/

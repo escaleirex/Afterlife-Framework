@@ -1,0 +1,19 @@
+---
+description: Enforce multiplayer authority model
+alwaysApply: true
+---
+
+# Networking Authority
+
+Read `docs/philosophy/multiplayer-doctrine.md` and `docs/networking/authority.md`.
+
+Forbidden:
+
+- Client-authoritative currency, inventory, rounds, doors, power, enemy health, RNG outcomes
+- “Singleplayer shortcut” branches that skip validation
+
+Required:
+
+- Dedicated-server-safe design
+- Validation of all purchase/activation intents on server
+- Explicit late-join policy when relevant

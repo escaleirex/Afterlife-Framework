@@ -1,0 +1,14 @@
+---
+description: Require tests and changelog updates
+alwaysApply: true
+---
+
+# Tests & Changelog
+
+For behavioral changes:
+
+1. Add/update automated tests OR document a precise manual/networked test plan in the PR.
+2. Update `CHANGELOG.md` `[Unreleased]`.
+3. Update owning docs.
+
+Do not merge “temporary” untested authority bypasses.

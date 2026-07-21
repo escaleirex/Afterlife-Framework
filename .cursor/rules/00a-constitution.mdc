@@ -1,0 +1,32 @@
+---
+description: Enforce Afterlife Framework Constitution as supreme project law
+alwaysApply: true
+---
+
+# Constitution Enforcement
+
+The file `docs/00-vision/Afterlife-Framework-Constitution.md` is **foundational project law**.
+
+## Agent Requirements
+
+1. Read the Constitution before proposing architecture, gameplay, Hub, or tooling changes.
+2. Reject or redesign any change that violates an Article.
+3. Do not “temporarily” bypass Articles for demos, convenience, or speed.
+4. Treat Constitutional amendments as rare RFC-level decisions only.
+5. When uncertain, apply the Constitution’s Final Principle: favor modularity, extensibility, discoverability, maintainability, and community creativity.
+
+## Quick Article Map
+
+| Article | Do not |
+|---------|--------|
+| I | Turn the framework into a single game |
+| II | Put gameplay systems in maps |
+| III | Require objectives / quest arrows / forced tutorials |
+| IV–V | Hardcode irreplaceable systems or content lists |
+| VI | Bypass the Event Bus for cross-system coupling |
+| VII | Trust clients / assume singleplayer |
+| VIII–X | Ship non-extensible or anti-modding features |
+| XI | Break maps without migration |
+| XII–XIII | Lock to Steam Workshop or one store platform |
+| XIV–XVI | Skip docs, skip RFCs, write clever unreadable code |
+| XVII–XVIII | Close the source or chase clones over pillars |

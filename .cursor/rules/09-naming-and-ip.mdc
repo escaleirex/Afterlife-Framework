@@ -1,0 +1,12 @@
+---
+description: Naming conventions and IP safety
+alwaysApply: true
+---
+
+# Naming & IP Safety
+
+Follow `docs/architecture/naming-conventions.md`.
+
+Never add Activision/Treyarch/Call of Duty trademarked mode/perk/weapon/map names to core code, core content, or core docs examples.
+
+Inspiration is allowed in prose philosophy docs as historical context only; implementation identifiers stay generic.

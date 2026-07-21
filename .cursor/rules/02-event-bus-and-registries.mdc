@@ -1,0 +1,12 @@
+---
+description: Enforce Event Bus and Registry usage
+alwaysApply: true
+---
+
+# Event Bus & Registries
+
+- Cross-system facts go through the Event Bus (`docs/core/event-bus.md`).
+- Content lookups go through Registries (`docs/core/registries.md`).
+- Do not scan Content folders at runtime for gameplay decisions.
+- Do not create a second parallel pub/sub “for convenience.”
+- Prefer RPCs for commands; Bus for facts after authoritative mutation.
