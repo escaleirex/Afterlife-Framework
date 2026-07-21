@@ -1,0 +1,16 @@
+---
+description: Documentation-first and docs contract
+alwaysApply: true
+---
+
+# Documentation
+
+1. Docs are source of truth (Constitution Article XIV).
+2. Read `docs/index.md` and the owning section doc before coding.
+3. Update docs + `CHANGELOG.md` in the same change as behavior.
+4. Keep the system doc contract sections.
+5. Cross-link; do not duplicate full specs.
+
+Doc layout:
+
+`docs/00-Vision` … `docs/07-Coding`, `docs/RFC`

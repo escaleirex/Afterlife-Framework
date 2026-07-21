@@ -4,7 +4,7 @@ This repository is documentation-first. Agents must follow `.cursor/rules/`.
 
 ## Quick Mandates
 
-1. **Read the [Constitution](docs/00-vision/Afterlife-Framework-Constitution.md) first.** It is foundational project law. Do not violate it.
+1. **Read the [Constitution](docs/00-Vision/Afterlife-Framework-Constitution.md) first.** It is foundational project law. Do not violate it.
 2. Read `docs/index.md` before architectural decisions.
 3. Obey `ROADMAP.md` phase gates.
 4. Do not invent systems not documented—RFC first.
@@ -19,10 +19,16 @@ This repository is documentation-first. Agents must follow `.cursor/rules/`.
 
 | Topic | Doc |
 |-------|-----|
-| **Constitution** | `docs/00-vision/Afterlife-Framework-Constitution.md` |
-| Philosophy | `docs/philosophy/design-philosophy.md` |
-| Architecture | `docs/architecture/overview.md` |
-| Event Bus | `docs/core/event-bus.md` |
-| Gameplay | `docs/gameplay/index.md` |
-| Hub | `docs/hub/index.md` |
-| RFC | `docs/rfc/process.md` |
+| **Constitution** | `docs/00-Vision/Afterlife-Framework-Constitution.md` |
+| Philosophy | `docs/00-Vision/philosophy/design-philosophy.md` |
+| Architecture | `docs/01-Engine/architecture/overview.md` |
+| Event Bus | `docs/01-Engine/core/event-bus.md` |
+| Gameplay | `docs/02-Gameplay/index.md` |
+| Hub | `docs/05-Modding/hub/index.md` |
+| RFC | `docs/RFC/process.md` |
+
+## Cursor Rules
+
+`.cursor/rules/`: `constitution` · `roadmap` · `documentation` · `architecture` · `networking` · `gameplay` · `modding` · `coding`
+
+Never add Cursor as a git co-author.

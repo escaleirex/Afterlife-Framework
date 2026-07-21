@@ -1,0 +1,29 @@
+name: Bug report
+description: Report incorrect behavior against documented specs
+title: "[Bug]: "
+labels: ["type:bug", "needs-triage"]
+body:
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected (per docs)
+      description: Link the owning doc section if possible
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction
+      description: Dedicated server? Player count? Map/mod versions?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Framework / package versions

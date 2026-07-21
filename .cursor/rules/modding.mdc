@@ -1,0 +1,14 @@
+---
+description: Modding and Afterlife Hub
+alwaysApply: true
+globs: docs/05-Modding/**/*,**/Hub/**/*,**/Modding/**/*
+---
+
+# Modding & Hub
+
+- Modding is first-class
+- Afterlife Hub is the content platform — not Steam Workshop lock-in
+- Players must never manually install dependencies
+- Support global mods, content packs, embedded mods, map requires/recommends
+
+See `docs/05-Modding/`.

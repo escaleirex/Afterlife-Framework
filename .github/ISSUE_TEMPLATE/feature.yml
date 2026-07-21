@@ -1,0 +1,49 @@
+name: Feature / System
+description: Propose a framework feature or gameplay system (usually needs an RFC)
+title: "[Feature]: "
+labels: ["type:feature", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Read the [Constitution](../docs/00-Vision/Afterlife-Framework-Constitution.md) first.
+        Major gameplay features require an RFC before implementation.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem does this solve for creators?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: High-level approach (link docs/RFC if any)
+    validations:
+      required: true
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Roadmap phase
+      options:
+        - Phase 1 — Engine
+        - Phase 2 — Gameplay
+        - Phase 3 — Tools
+        - Phase 4 — Online Ecosystem
+        - Phase 5 — Public Release
+        - Phase 6+ — Expansion
+        - Unsure
+    validations:
+      required: true
+  - type: checkboxes
+    id: constitution
+    attributes:
+      label: Constitution
+      options:
+        - label: This does not force objectives/quests in core
+          required: true
+        - label: This remains modular / replaceable / data-driven
+          required: true
+        - label: This respects multiplayer server authority
+          required: true

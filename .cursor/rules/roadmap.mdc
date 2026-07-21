@@ -1,0 +1,12 @@
+---
+description: Do not skip Afterlife Framework roadmap phases
+alwaysApply: true
+---
+
+# Roadmap Discipline
+
+Obey root `ROADMAP.md` / `docs/Roadmap.md`.
+
+- Do not implement Phase N+1 work on main early
+- Tools do not precede Engine; Hub does not precede Gameplay
+- Docs-era foundation must exist before gameplay classes

@@ -1,0 +1,15 @@
+---
+description: Gameplay modularity and discovery
+alwaysApply: true
+globs: **/Gameplay/**/*,docs/02-Gameplay/**/*
+---
+
+# Gameplay
+
+- Discovery over instruction — no required objectives/quest arrows in core
+- Optional objective plugins only (`docs/02-Gameplay/quest-framework/`)
+- Every major system replaceable via strategies/registries
+- Data-driven definitions; no hardcoded content lists
+- Generic names in core (UpgradeStation, Consumable, RandomWeaponCrate)
+
+See `docs/02-Gameplay/`.

@@ -10,7 +10,7 @@ New gameplay subsystems · Event Bus contract changes · Replication ownership c
 
 ## Constitutional Amendments
 
-Amending [`docs/00-vision/Afterlife-Framework-Constitution.md`](../00-vision/Afterlife-Framework-Constitution.md) requires an RFC that:
+Amending [`docs/00-Vision/Afterlife-Framework-Constitution.md`](../00-vision/Afterlife-Framework-Constitution.md) requires an RFC that:
 
 1. Explains why existing Articles are insufficient
 2. Describes expected impact on creators, maps, and compatibility

@@ -13,7 +13,10 @@ Until the first runtime release, versions may use `0.y.z` documentation/pre-rele
 
 ### Added
 
-- Afterlife Framework Constitution as foundational project law (`docs/00-vision/`)
+- Professional repository layout: numbered `docs/00-Vision`…`07-Coding`, runtime scaffolds (`Engine/`, `Game/`, `Plugins/`, `Samples/`, `Templates/`, `Tests/`, `Tools/`)
+- GitHub Issue/PR templates, docs CI workflow, and Projects board guidance (`.github/`)
+- Reorganized Cursor rules (`constitution`, `architecture`, `coding`, `documentation`, `networking`, `roadmap`, `gameplay`, `modding`)
+- Afterlife Framework Constitution as foundational project law (`docs/00-Vision/`)
 - Initial official documentation repository (source of truth)
 - Design, discovery, and gameplay philosophy documents
 - Architecture overview, folder structure, and naming conventions
@@ -24,12 +27,14 @@ Until the first runtime release, versions may use `0.y.z` documentation/pre-rele
 - Mapping and Modding guides
 - RFC process and template
 - Multi-year roadmap (Phases 1–6+)
-- Cursor rules under `.cursor/rules/`
+- Cursor rules under `.cursor/rules/` (`constitution`, `architecture`, `coding`, …)
 - Contributing guide, security policy notes, code of conduct
 
 ### Changed
 
-- N/A (initial documentation baseline)
+- Reorganized documentation into numbered sections (`docs/00-Vision` … `07-Coding`)
+- Replaced Cursor rules with named professional set
+- Updated repository layout to engine-style scaffolds and `.github` project management
 
 ### Deprecated
 
@@ -67,7 +72,7 @@ Until the first runtime release, versions may use `0.y.z` documentation/pre-rele
 | `1.0.0` | First public runtime release with stability guarantees |
 | `x.0.0` | Major: rare; requires RFC + migration guide; never intentional silent map breaks |
 
-Compatibility policy: [`docs/philosophy/compatibility.md`](docs/philosophy/compatibility.md)
+Compatibility policy: [`docs/00-Vision/philosophy/compatibility.md`](docs/00-Vision/philosophy/compatibility.md)
 
 ---
 

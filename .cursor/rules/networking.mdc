@@ -1,0 +1,13 @@
+---
+description: Multiplayer-first authority
+alwaysApply: true
+---
+
+# Networking
+
+- Multiplayer first; singleplayer emerges from the same paths
+- Server authoritative; clients never own gameplay truth
+- Dedicated servers required for gameplay systems
+- Validate all spend/activate intents on server
+
+See `docs/04-Multiplayer/`.

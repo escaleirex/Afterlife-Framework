@@ -5,7 +5,7 @@ Tools must not precede a stable engine core. Hub must not precede gameplay. Publ
 
 This roadmap is the sequencing contract for contributors, Cursor agents, and maintainers.
 
-Related: [Design Philosophy](docs/philosophy/design-philosophy.md) · [RFC Process](docs/rfc/process.md) · [Compatibility](docs/philosophy/compatibility.md)
+Related: [Design Philosophy](docs/00-Vision/philosophy/design-philosophy.md) · [RFC Process](docs/RFC/process.md) · [Compatibility](docs/00-Vision/philosophy/compatibility.md)
 
 ---
 
@@ -42,7 +42,7 @@ Estimated calendar spans assume a small core team + community. Dates are targets
 
 ### Deliverables
 
-- [ ] Unreal Engine 5 + UnrealSharp project skeleton matching [`docs/architecture/folder-structure.md`](docs/architecture/folder-structure.md)
+- [ ] Unreal Engine 5 + UnrealSharp project skeleton matching [`docs/01-Engine/architecture/folder-structure.md`](docs/01-Engine/architecture/folder-structure.md)
 - [ ] Module boundaries and ownership rules enforced
 - [ ] **Event Bus** (local + replicated event contracts)
 - [ ] **Registries** (weapons, entities, modes, mods — empty but complete API)

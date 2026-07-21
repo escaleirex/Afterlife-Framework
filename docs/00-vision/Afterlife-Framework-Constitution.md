@@ -4,7 +4,7 @@
 **Status:** Foundational Project Law  
 **Applies To:** All contributors, maintainers, AI agents, plugins, modules, maps, tools, and future expansions of Afterlife Framework.
 
-**Location:** `docs/00-vision/Afterlife-Framework-Constitution.md`  
+**Location:** `docs/00-Vision/Afterlife-Framework-Constitution.md`  
 *(Canonical equivalent of `Docs/00 Vision/Afterlife Framework Constitution.md`.)*
 
 ---
@@ -39,7 +39,7 @@ When documents conflict, resolve in this order:
 4. System documentation under [`docs/`](../index.md)
 5. Implementation code
 
-Philosophy docs under [`docs/philosophy/`](../philosophy/design-philosophy.md) interpret and expand these Articles. They must never contradict them.
+Philosophy docs under [`docs/00-Vision/philosophy/`](../philosophy/design-philosophy.md) interpret and expand these Articles. They must never contradict them.
 
 ---
 
@@ -442,8 +442,8 @@ Every decision should serve that purpose.
 ## Related Documents
 
 - [Documentation Index](../index.md)
-- [Design Philosophy](../philosophy/design-philosophy.md)
-- [Discovery Philosophy](../philosophy/discovery-philosophy.md)
-- [RFC Process](../rfc/process.md)
+- [Design Philosophy](philosophy/design-philosophy.md)
+- [Discovery Philosophy](philosophy/discovery-philosophy.md)
+- [RFC Process](../RFC/process.md)
 - [Roadmap](../../ROADMAP.md)
 - [Contributing](../../CONTRIBUTING.md)

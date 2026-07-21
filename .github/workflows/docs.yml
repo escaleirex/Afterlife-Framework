@@ -1,0 +1,35 @@
+name: Docs
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "docs/**"
+      - "rfcs/**"
+      - "README.md"
+      - "ROADMAP.md"
+      - "CHANGELOG.md"
+      - ".github/workflows/docs.yml"
+  pull_request:
+    paths:
+      - "docs/**"
+      - "rfcs/**"
+      - "README.md"
+      - "ROADMAP.md"
+      - "CHANGELOG.md"
+
+jobs:
+  markdown-lint-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check Constitution exists
+        run: test -f docs/00-Vision/Afterlife-Framework-Constitution.md || test -f docs/00-vision/Afterlife-Framework-Constitution.md
+      - name: Check required foundation files
+        run: |
+          test -f README.md
+          test -f ROADMAP.md
+          test -f CONTRIBUTING.md
+          test -f CHANGELOG.md
+          test -f docs/index.md
+          test -f docs/RFC/process.md -o -f docs/rfc/process.md

@@ -29,3 +29,9 @@ node_modules/
 .env.*
 *.pem
 secrets/
+
+# Local GitHub project dumps
+.github/project-meta.json
+.github/project-fields.json
+.github/project-status-vars.json
+

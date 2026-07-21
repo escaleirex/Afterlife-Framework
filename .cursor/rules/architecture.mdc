@@ -1,0 +1,15 @@
+---
+description: Engine architecture laws
+alwaysApply: true
+---
+
+# Architecture
+
+- Framework is an engine, not a game (Article I)
+- Maps own content; framework owns behavior (Article II)
+- Composition over inheritance
+- Registries + Asset Manager + Dependency Loader + Plugin System
+- Never invent undocumented architecture — RFC first
+- Prefer extending existing systems over parallel duplicates
+
+See `docs/01-Engine/`.

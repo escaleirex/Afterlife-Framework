@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://github.com/escaleirex/Afterlife-Framework/blob/main/docs/index.md
+    about: Read the docs and Constitution before opening issues.
+  - name: RFC Process
+    url: https://github.com/escaleirex/Afterlife-Framework/blob/main/docs/RFC/process.md
+    about: Major features start as RFCs, not drive-by PRs.

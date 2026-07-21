@@ -2,62 +2,51 @@
 
 > **Single source of truth.** If code and docs disagree, update code to match docs—or amend docs via RFC.
 
-Welcome to the official documentation for **Afterlife Framework**, an open-source Unreal Engine 5 (UnrealSharp / C#) engine for round-based survival experiences.
-
-**Foundational law:** [Afterlife Framework Constitution](00-vision/Afterlife-Framework-Constitution.md) — every decision is evaluated against it. If a change violates the Constitution, reject or redesign.
+**Foundational law:** [Constitution](00-Vision/Afterlife-Framework-Constitution.md)
 
 ---
 
-## How to Read These Docs
+## Documentation Structure
 
-1. **Everyone** → [Constitution](00-vision/Afterlife-Framework-Constitution.md) (read first)
-2. **New contributors** → [Getting Started](getting-started/overview.md) → [Design Philosophy](philosophy/design-philosophy.md)
-3. **Gameplay programmers** → [Architecture Overview](architecture/overview.md) → [Event Bus](core/event-bus.md) → [Gameplay Index](gameplay/index.md)
-4. **Network engineers** → [Networking Overview](networking/overview.md)
-5. **Mappers** → [Mapping Guide](mapping/index.md)
-6. **Modders** → [Modding Guide](modding/index.md)
-7. **UI engineers** → [UI Index](ui/index.md) → [Lobby](lobby/index.md) → [Afterlife Hub](hub/index.md)
-8. **Feature proposers** → [RFC Process](rfc/process.md)
+```
+docs/
+├── 00-Vision/        Constitution, philosophy, getting started
+├── 01-Engine/        Architecture, core services, audio, performance
+├── 02-Gameplay/      All gameplay systems
+├── 03-Maps/          Mapping guide
+├── 04-Multiplayer/   Networking & dedicated servers
+├── 05-Modding/       Mods, Hub, plugins
+├── 06-UI/            Menus, lobby, HUD
+├── 07-Coding/        Standards, testing, CI/CD
+├── RFC/              RFC process
+└── Roadmap.md        Pointer to root ROADMAP.md
+```
 
-## Documentation Map
+## How to Read
 
-### Vision (Foundational Law)
-- [Afterlife Framework Constitution](00-vision/Afterlife-Framework-Constitution.md)
+1. [Constitution](00-Vision/Afterlife-Framework-Constitution.md)
+2. [Getting Started](00-Vision/getting-started/overview.md)
+3. [Design Philosophy](00-Vision/philosophy/design-philosophy.md)
+4. Your area: Engine · Gameplay · Maps · Multiplayer · Modding · UI · Coding
+5. [RFC Process](RFC/process.md) before major features
+6. [Roadmap](../ROADMAP.md)
 
-### Philosophy
-- [Design Philosophy](philosophy/design-philosophy.md)
-- [Discovery Philosophy](philosophy/discovery-philosophy.md)
-- [Gameplay Philosophy](philosophy/gameplay-philosophy.md)
-- [Compatibility Promise](philosophy/compatibility.md)
-- [Multiplayer Doctrine](philosophy/multiplayer-doctrine.md)
-- [Modding Doctrine](philosophy/modding-doctrine.md)
+## Section Indexes
 
-### Core
-- [Event Bus](core/event-bus.md) · [Registries](core/registries.md) · [Asset Manager](core/asset-manager.md) · [Dependency Loader](core/dependency-loader.md) · [Save System](core/save-system.md) · [Plugin System](core/plugin-system.md) · [Session Lifecycle](core/session-lifecycle.md) · [Time & Tick](core/time-and-tick.md)
+- [00 Vision](00-Vision/README.md)
+- [01 Engine](01-Engine/README.md)
+- [02 Gameplay](02-Gameplay/README.md) · [Systems](02-Gameplay/index.md)
+- [03 Maps](03-Maps/README.md)
+- [04 Multiplayer](04-Multiplayer/README.md)
+- [05 Modding](05-Modding/README.md)
+- [06 UI](06-UI/README.md)
+- [07 Coding](07-Coding/README.md)
+- [RFC](RFC/README.md)
 
-### Gameplay
-- [Gameplay Index](gameplay/index.md)
+## Repository Runtime Layout
 
-### Frontend
-- [UI](ui/index.md) · [Lobby](lobby/index.md) · [Hub](hub/index.md)
-
-### Creators
-- [Mapping](mapping/index.md) · [Modding](modding/index.md) · [Plugins](plugins/index.md)
-
-### Quality & Process
-- [Code Style](standards/code-style.md) · [Documentation Style](standards/documentation-style.md) · [Git Workflow](standards/git-workflow.md)
-- [Testing](testing/index.md) · [Performance](performance/index.md) · [CI/CD](devops/ci-cd.md) · [Automation](devops/automation.md)
-- [RFC](rfc/process.md) · [Roadmap](../ROADMAP.md) · [Changelog](../CHANGELOG.md) · [Contributing](../CONTRIBUTING.md)
-
-### Reference
-- [FAQ](reference/faq.md) · [Document Status](reference/document-status.md) · [License Notes](reference/license-notes.md) · [Security](reference/security.md) · [Code of Conduct](reference/code-of-conduct.md)
-
-## Document Contract
-
-Every system document includes: Purpose · Responsibilities · Architecture · Ownership · Data Flow · Networking · Events · Extension Points · Examples · Edge Cases · Future Considerations
-
-Many systems additionally include an **Implementation Specification** with APIs, state machines, schemas, and authoring checklists.
+See [Folder Structure](01-Engine/architecture/folder-structure.md) and the root `README.md`.
 
 ## Version
 
-Documentation baseline: **0.1.0-docs**
+Documentation baseline: **0.1.0-docs** (reorganized into numbered sections)

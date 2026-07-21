@@ -1,0 +1,14 @@
+---
+description: Coding standards, tests, RFCs, commits
+alwaysApply: true
+---
+
+# Coding
+
+- Readability over cleverness
+- Follow `docs/07-Coding/standards/code-style.md`
+- Behavioral changes need tests or an explicit test plan
+- Major features need RFC (`docs/RFC/process.md`)
+- No proprietary IP names in core
+- Never bypass Event Bus for cross-system facts
+- Commit author is the human owner — never add Cursor as co-author

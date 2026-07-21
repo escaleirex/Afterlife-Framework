@@ -1,0 +1,14 @@
+---
+description: Afterlife Framework Constitution — supreme project law
+alwaysApply: true
+---
+
+# Constitution
+
+Read and obey `docs/00-Vision/Afterlife-Framework-Constitution.md` before architectural or gameplay decisions.
+
+If a change violates any Article, reject or redesign it.
+
+Amendments require a rare RFC. Never bypass Articles for demos or speed.
+
+Never add `Co-authored-by: Cursor` or any Cursor attribution trailer to commits.

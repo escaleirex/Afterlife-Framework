@@ -1,0 +1,17 @@
+name: Documentation
+description: Docs gap, clarification, or correction
+title: "[Docs]: "
+labels: ["type:docs", "needs-triage"]
+body:
+  - type: input
+    id: path
+    attributes:
+      label: Doc path
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: What should change?
+    validations:
+      required: true

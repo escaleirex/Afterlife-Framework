@@ -42,30 +42,30 @@ Everything is built for **years of backwards compatibility**.
 | **Compatibility forever** | Never intentionally break published maps |
 | **Documentation over assumptions** | This repository is the single source of truth |
 
-**Constitution (foundational law):** [`docs/00-vision/Afterlife-Framework-Constitution.md`](docs/00-vision/Afterlife-Framework-Constitution.md)
+**Constitution (foundational law):** [`docs/00-Vision/Afterlife-Framework-Constitution.md`](docs/00-Vision/Afterlife-Framework-Constitution.md)
 
-Full philosophy expansions: [`docs/philosophy/`](docs/philosophy/)
+Full philosophy expansions: [`docs/00-Vision/philosophy/`](docs/00-Vision/philosophy/)
 
 ---
 
 ## Documentation
 
-**Start here:** [`docs/00-vision/Afterlife-Framework-Constitution.md`](docs/00-vision/Afterlife-Framework-Constitution.md) → [`docs/index.md`](docs/index.md)
+**Start here:** [`docs/00-Vision/Afterlife-Framework-Constitution.md`](docs/00-Vision/Afterlife-Framework-Constitution.md) → [`docs/index.md`](docs/index.md)
 
 | Area | Path |
 |------|------|
-| Constitution | [`docs/00-vision/`](docs/00-vision/) |
-| Getting Started | [`docs/getting-started/`](docs/getting-started/) |
-| Architecture | [`docs/architecture/`](docs/architecture/) |
-| Core Systems | [`docs/core/`](docs/core/) |
-| Networking | [`docs/networking/`](docs/networking/) |
-| Gameplay Systems | [`docs/gameplay/`](docs/gameplay/) |
-| UI / Frontend | [`docs/ui/`](docs/ui/) |
-| Lobby | [`docs/lobby/`](docs/lobby/) |
-| Afterlife Hub | [`docs/hub/`](docs/hub/) |
-| Mapping Guide | [`docs/mapping/`](docs/mapping/) |
-| Modding Guide | [`docs/modding/`](docs/modding/) |
-| RFC Process | [`docs/rfc/`](docs/rfc/) |
+| Constitution | [`docs/00-Vision/`](docs/00-Vision/) |
+| Getting Started | [`docs/00-Vision/getting-started/`](docs/00-Vision/getting-started/) |
+| Architecture | [`docs/01-Engine/architecture/`](docs/01-Engine/architecture/) |
+| Core Systems | [`docs/01-Engine/core/`](docs/01-Engine/core/) |
+| Networking | [`docs/04-Multiplayer/`](docs/04-Multiplayer/) |
+| Gameplay Systems | [`docs/02-Gameplay/`](docs/02-Gameplay/) |
+| UI / Frontend | [`docs/06-UI/ui/`](docs/06-UI/ui/) |
+| Lobby | [`docs/06-UI/lobby/`](docs/06-UI/lobby/) |
+| Afterlife Hub | [`docs/05-Modding/hub/`](docs/05-Modding/hub/) |
+| Mapping Guide | [`docs/03-Maps/`](docs/03-Maps/) |
+| Modding Guide | [`docs/05-Modding/modding/`](docs/05-Modding/modding/) |
+| RFC Process | [`docs/RFC/`](docs/RFC/) |
 | Roadmap | [`ROADMAP.md`](ROADMAP.md) |
 | Contributing | [`CONTRIBUTING.md`](CONTRIBUTING.md) |
 | Changelog | [`CHANGELOG.md`](CHANGELOG.md) |
@@ -84,18 +84,30 @@ Full philosophy expansions: [`docs/philosophy/`](docs/philosophy/)
 
 ---
 
-## Repository Layout (Target)
+## Repository Layout
 
 ```
 Afterlife-Framework/
-├── docs/                  # Official documentation (source of truth)
-├── rfcs/                  # Accepted and in-progress RFCs
-├── .cursor/rules/         # Cursor agent rules (must follow docs)
-├── Source/                # UnrealSharp C# gameplay modules (future)
-├── Content/               # Engine content packages (future)
-├── Plugins/               # First-party plugins (future)
-├── Tests/                 # Automated tests (future)
-├── Tools/                 # Editor tools, CI helpers (future)
+├── .github/               # Issues, PR template, workflows, Projects notes
+├── .cursor/rules/         # constitution, architecture, coding, …
+├── docs/
+│   ├── 00-Vision/         # Constitution + philosophy
+│   ├── 01-Engine/
+│   ├── 02-Gameplay/
+│   ├── 03-Maps/
+│   ├── 04-Multiplayer/
+│   ├── 05-Modding/
+│   ├── 06-UI/
+│   ├── 07-Coding/
+│   └── RFC/
+├── rfcs/
+├── Engine/                # Framework runtime (Phase 1+)
+├── Game/                  # Thin host project
+├── Plugins/
+├── Samples/
+├── Templates/
+├── Tests/
+├── Tools/
 ├── ROADMAP.md
 ├── CONTRIBUTING.md
 ├── CHANGELOG.md
@@ -103,7 +115,9 @@ Afterlife-Framework/
 └── README.md
 ```
 
-Folder structure specification: [`docs/architecture/folder-structure.md`](docs/architecture/folder-structure.md)
+Folder structure specification: [`docs/01-Engine/architecture/folder-structure.md`](docs/01-Engine/architecture/folder-structure.md)
+
+**Project management:** use GitHub Projects — see [`.github/PROJECTS.md`](.github/PROJECTS.md). Do not track engine work in a giant TODO markdown file.
 
 ---
 
@@ -111,18 +125,20 @@ Folder structure specification: [`docs/architecture/folder-structure.md`](docs/a
 
 This repository currently ships **documentation as the product foundation**.
 
-Implementation follows the multi-year roadmap in [`ROADMAP.md`](ROADMAP.md). No gameplay feature may be implemented without an accepted RFC when the RFC process applies (see [`docs/rfc/`](docs/rfc/)).
+Do **not** write gameplay classes until the foundation checklist is complete (it is): Constitution · Roadmap · Architecture · Gameplay Philosophy · Cursor Rules · RFC · CONTRIBUTING · Folder Structure · Coding Standards.
+
+Implementation follows [`ROADMAP.md`](ROADMAP.md). No gameplay feature without an accepted RFC when required (see [`docs/RFC/`](docs/RFC/)).
 
 ---
 
 ## Quick Links for Contributors
 
-1. Read the [Constitution](docs/00-vision/Afterlife-Framework-Constitution.md)
-2. Read [`docs/philosophy/design-philosophy.md`](docs/philosophy/design-philosophy.md)
+1. Read the [Constitution](docs/00-Vision/Afterlife-Framework-Constitution.md)
+2. Read [`docs/00-Vision/philosophy/design-philosophy.md`](docs/00-Vision/philosophy/design-philosophy.md)
 3. Read [`ROADMAP.md`](ROADMAP.md) — do not skip phases
 4. Read [`CONTRIBUTING.md`](CONTRIBUTING.md)
-4. Open an RFC if proposing a new gameplay system: [`docs/rfc/process.md`](docs/rfc/process.md)
-5. Follow code style: [`docs/standards/code-style.md`](docs/standards/code-style.md)
+5. Open an RFC if proposing a new gameplay system: [`docs/RFC/process.md`](docs/RFC/process.md)
+6. Follow code style: [`docs/07-Coding/standards/code-style.md`](docs/07-Coding/standards/code-style.md)
 
 ---
 
@@ -139,7 +155,7 @@ Implementation follows the multi-year roadmap in [`ROADMAP.md`](ROADMAP.md). No 
 ## License
 
 Afterlife Framework is licensed under the **GNU General Public License v3.0**.  
-See [`LICENSE`](LICENSE) and [`docs/reference/license-notes.md`](docs/reference/license-notes.md).
+See [`LICENSE`](LICENSE) and [`docs/07-Coding/reference/license-notes.md`](docs/07-Coding/reference/license-notes.md).
 
 ---
 

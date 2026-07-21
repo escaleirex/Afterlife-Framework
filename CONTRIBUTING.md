@@ -25,15 +25,15 @@ This document is mandatory reading before any pull request.
 
 Be respectful. Assume good intent. Critique ideas, not people. Harassment, gatekeeping, or IP-infringing contributions are not welcome.
 
-See also: [`docs/reference/code-of-conduct.md`](docs/reference/code-of-conduct.md)
+See also: [`docs/07-Coding/reference/code-of-conduct.md`](docs/07-Coding/reference/code-of-conduct.md)
 
 ---
 
 ## Before You Start
 
-1. Read the [Constitution](docs/00-vision/Afterlife-Framework-Constitution.md) — foundational project law
-2. Read the [Design Philosophy](docs/philosophy/design-philosophy.md)
-3. Read the [Discovery Philosophy](docs/philosophy/discovery-philosophy.md)
+1. Read the [Constitution](docs/00-Vision/Afterlife-Framework-Constitution.md) — foundational project law
+2. Read the [Design Philosophy](docs/00-Vision/philosophy/design-philosophy.md)
+3. Read the [Discovery Philosophy](docs/00-Vision/philosophy/discovery-philosophy.md)
 4. Read the current [Roadmap](ROADMAP.md) — **do not implement future-phase work early**
 5. Search existing issues, RFCs, and docs for duplicates
 6. Confirm your change does not invent architecture outside documented systems
@@ -88,7 +88,7 @@ Does **not** require RFC (still needs PR review):
 - Test-only additions
 - Bug fixes that restore documented behavior
 
-Process: [`docs/rfc/process.md`](docs/rfc/process.md)  
+Process: [`docs/RFC/process.md`](docs/RFC/process.md)  
 Template: [`rfcs/templates/0000-template.md`](rfcs/templates/0000-template.md)
 
 ---
@@ -197,7 +197,7 @@ Breaking changes must include `BREAKING CHANGE:` in the footer and a migration s
 
 ## What We Will Reject
 
-- Changes that violate the [Constitution](docs/00-vision/Afterlife-Framework-Constitution.md)
+- Changes that violate the [Constitution](docs/00-Vision/Afterlife-Framework-Constitution.md)
 - Hardcoded proprietary IP, names, logos, or assets in core
 - Built-in Main Quest / Side Quest / Mission systems in core
 - Client-authoritative gameplay state
